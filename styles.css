@@ -1,0 +1,138 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    color: #212529;
+    line-height: 1.6;
+    padding-bottom: 50px;
+}
+
+header {
+    background: #007bff;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+nav {
+    background-color: #343a40;
+    text-align: center;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f8f9fa;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffc107;
+}
+
+section {
+    padding: 50px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+h2 {
+    color: #007bff;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 2em;
+}
+
+.skill {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 20px;
+    position: relative;
+}
+
+.skill::before {
+    content: '\2022';
+    color: #007bff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.5em;
+    line-height: 1;
+}
+
+.project {
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+.resume-link {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.resume-link:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+}
